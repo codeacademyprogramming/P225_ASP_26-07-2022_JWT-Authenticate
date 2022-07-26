@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20220720113239_CreatedCategoriesTable.cs" />
+    <Compile Remove="Data\Migrations\20220720113239_CreatedCategoriesTable.Designer.cs" />
+    <Compile Remove="Data\Migrations\20220725102817_AddedCategoriesTabel.cs" />
+    <Compile Remove="Data\Migrations\20220725102817_AddedCategoriesTabel.Designer.cs" />
+    <Compile Remove="Data\Migrations\20220725103042_AddedBrandsTabel.cs" />
+    <Compile Remove="Data\Migrations\20220725103042_AddedBrandsTabel.Designer.cs" />
+    <Compile Remove="Data\Migrations\20220725103437_AddedBrandsTabel.cs" />
+    <Compile Remove="Data\Migrations\20220725103437_AddedBrandsTabel.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.27" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.27" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.27" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.27" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.27" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.27">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="App\V1\User\Controllers\" />
+  </ItemGroup>
+
+</Project>
